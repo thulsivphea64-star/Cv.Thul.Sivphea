@@ -1,0 +1,26 @@
+/* ---------------- Global Styles ---------------- */
+*{ box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', 'Kantumruy Pro', sans-serif; background-color: #f1f5f9; color: #334155; line-height: 1.6; padding: 40px 15px; }
+.cv-container { max-width: 850px; margin: 0 auto; background-color: #ffffff; padding: 40px 50px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); }
+/* ---------------- Header Section ---------------- */ header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #e2e8f0; padding-bottom: 25px; margin-bottom: 30px; }
+.header-info h1 { font-size: 2.2rem; color: #0f172a; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 4px; }
+.header-info .job-title { font-size: 1.1rem; color: #2563eb; font-weight: 600; margin-bottom: 12px; }
+.contact-info { font-size: 0.95rem; color: #64748b; line-height: 1.6; }
+.profile-img-container { flex-shrink: 0; }
+.profile-img-container img { width: 130px; height: 170px; object-fit: cover; border-radius: 8px; border: 2px solid #cbd5e1; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); }
+/* ---------------- Content Sections ---------------- */ section { margin-bottom: 30px; }
+.section-title { font-size: 1.25rem; color: #1e293b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+.section-title::after { content: ''; flex: 1; height: 2px; background-color: #e2e8f0; }
+/* Lists styling */ ul { list-style-position: inside; margin-left: 5px; }
+li { margin-bottom: 8px; color: #475569; font-size: 0.95rem; }
+/* Experience & Education Item Styles */ .item-block { margin-bottom: 20px; }
+.item-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; }
+.item-title { font-size: 1.05rem; font-weight: 600; color: #1e293b; }
+.item-date { font-size: 0.875rem; color: #64748b; font-style: italic; }
+.item-subtitle { font-size: 0.95rem; color: #2563eb; font-weight: 500; margin-bottom: 8px; }
+/* Skills Badges */ .skills-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+.skill-badge { background-color: #f1f5f9; color: #334155; padding: 6px 14px; border-radius: 20px; font-size: 0.875rem; font-weight: 500; border: 1px solid #e2e8f0; }
+/* ---------------- Footer ---------------- */ footer { border-top: 1px solid #e2e8f0; padding-top: 20px; text-align: center; font-size: 0.85rem; color: #94a3b8; margin-top: 40px; }
+/* Responsive for small screens */ @media (max-width: 640px) { header { flex-direction: column-reverse; align-items: center; text-align: center; gap: 20px; }
+.cv-container { padding: 25px 20px; }
+.item-header { flex-direction: column; align-items: flex-start; } }
